@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:true}))
 
 app.use('/api/auth',authRoutes)
 app.use('/api/auth',foodpartnerAuthRoutes)
-app.use('./api/food',foodRoutes)
+app.use('/api/food',foodRoutes)
 
 module.exports= app;
 

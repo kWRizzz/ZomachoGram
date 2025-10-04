@@ -5,7 +5,7 @@ const foodModel = require('../models/food.model');
 
 
 const authFoodPartnerMiddleware=async (req,res,next) =>{
-    const token =req.cookie.token;
+    const token =req.cookies.token;
     if(!token){
         return res.status(401).json({
             message:"please Login First"
